@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #9c9fdf;
+  --color-secondary: #6a6cb4;
+}
+
+.dracula {
+  @apply !bg-[#111528];
+}
