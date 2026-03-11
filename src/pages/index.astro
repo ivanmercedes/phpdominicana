@@ -1,8 +1,14 @@
 ---
-import Hero from "../components/home/Hero.astro";
+import PHPComponent from "../components/PHPComponent.astro";
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
 <Layout>
-  <Hero />
+    <PHPComponent componentName="Hero" />
+    <PHPComponent componentName="Companies" />
+    <PHPComponent componentName="Values" />
+    <PHPComponent componentName="Projects" />
+    <PHPComponent componentName="LastBlogPosts" />
+    <PHPComponent componentName="Cta" />
 </Layout>
