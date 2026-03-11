@@ -1,8 +1,3 @@
----
-import dominetLogo from "../../assets/dominet-logo.webp";
-import seisigmaLogo from "../../assets/seisigma-logo.webp";
----
-
 <section class="py-16 bg-gradient-to-b from-white to-indigo-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
@@ -11,11 +6,11 @@ import seisigmaLogo from "../../assets/seisigma-logo.webp";
       </p>
       <div class="flex justify-center items-center space-x-12 opacity-70">
         <a href="https://dominet.net/" target="_blank" rel="">
-          <img src={dominetLogo.src} alt="" />
+          <img src="/src/assets/dominet-logo.webp" alt="Dominet" />
         </a>
 
         <a href="https://seisigma.co/" target="_blank" rel="">
-          <img src={seisigmaLogo.src} alt="" />
+          <img src="/src/assets/seisigma-logo.webp" alt="Seisigma" />
         </a>
       </div>
     </div>

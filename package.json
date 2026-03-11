@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "concurrently \"php -S localhost:8000 -t php\" \"astro dev\"",
+    "build": "concurrently --kill-others --success first \"php -S localhost:8000 -t php\" \"sleep 1 && astro build\"",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -13,5 +13,8 @@
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.10.1",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }

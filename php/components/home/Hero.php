@@ -1,7 +1,3 @@
----
-import { Code } from "astro:components";
----
-
 <header class="relative overflow-x-hidden">
   <div class="absolute inset-0 overflow-x-hidden">
     <div
@@ -63,9 +59,8 @@ import { Code } from "astro:components";
             <div class="ml-4 text-gray-400 text-sm font-mono">welcome.php</div>
           </div>
 
-          <div class="p-6 text-sm leading-relaxed text-left">
-            <Code
-              code={`<?php
+          <div class="p-6 text-sm leading-relaxed text-left text-gray-100 overflow-x-auto">
+            <pre><code class="language-php">&lt;?php
 
 declare(strict_types=1);
 
@@ -73,19 +68,16 @@ use ComunidadPhp\Dominicana;
 
 $comunidad = new Dominicana();
 
-$comunidad->unirte([
-    'rol'    => 'Desarrollador PHP',
-    'intereses' => ['Laravel','PHP',  'Open Source', 'Eventos', 'Café'],
+$comunidad-&gt;unirte([
+    'rol'    =&gt; 'Desarrollador PHP',
+    'intereses' =&gt; ['Laravel','PHP',  'Open Source', 'Eventos', 'Café'],
 ]);
 
-$comunidad->compartirConocimiento();
-$comunidad->crearConexiones();
+$comunidad-&gt;compartirConocimiento();
+$comunidad-&gt;crearConexiones();
 
 echo "🇩🇴 ¡Bienvenido a la Comunidad PHP Dominicana!";
-`}
-              lang="php"
-              theme="dracula"
-            />
+</code></pre>
           </div>
         </div>
       </div>

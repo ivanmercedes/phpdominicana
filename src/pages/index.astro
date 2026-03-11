@@ -1,18 +1,14 @@
 ---
-import Cta from "../components/home/Cta.astro";
-import Companies from "../components/home/Companies.astro";
-import Hero from "../components/home/Hero.astro";
-import LastBlogPosts from "../components/home/LastBlogPosts.astro";
-import Projects from "../components/home/Projects.astro";
-import Values from "../components/home/Values.astro";
+import PHPComponent from "../components/PHPComponent.astro";
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
 <Layout>
-  <Hero />
-  <Companies />
-  <Values />
-  <Projects />
-  <LastBlogPosts />
-  <Cta />
+    <PHPComponent componentName="Hero" />
+    <PHPComponent componentName="Companies" />
+    <PHPComponent componentName="Values" />
+    <PHPComponent componentName="Projects" />
+    <PHPComponent componentName="LastBlogPosts" />
+    <PHPComponent componentName="Cta" />
 </Layout>
